@@ -49,19 +49,9 @@ print(func('N'))
 print(func('N3(S)N2(E)N'))
 print(func('2(3(NW)2(W2(EE)W))'))
 
-# # input() reads a string with a line of input, stripping the ' ' (newline) at the end.
-# # This is all you need for most Code Jam problems.
-# t = int(raw_input())  # read a line with a single integer
-# for i in range(1, t + 1):
-#     arr = raw_input()
-#     res = f(arr)
-#     print("Case #{}: {} {}".format(i, res[0], res[1]))
 
 
-print("-----")
-
-
-def f(s):
+def func(s):
     toDown = 0
     toRight = 0
 
@@ -98,5 +88,5 @@ def f(s):
 t = int(input())  # read a line with a single integer
 for i in range(1, t + 1):
     arr = input()
-    res = f(arr)
+    res = func(arr)
     print("Case #{}: {} {}".format(i, res[0], res[1]))

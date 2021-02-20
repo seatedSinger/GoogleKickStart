@@ -1,8 +1,6 @@
 '''
 Passed
 '''
-
-
 def func(nums, D):
     rightMost = D
     for i in range(len(nums)-1, -1, -1):
